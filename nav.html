@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation-bar</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <nav class="nav-bar">
+     <div class ="logo">LOGO</div>
+     <ul class="nav-links active">
+        <li><a href="https://www.amazon.com/">amazon</a></li>
+        <li><a href="https://www.myntra.com/">myntra</a></li>
+        <li><a href="https://www.meesho.com/">meesho</a></li>
+        <li><a href="https://www.flipkart.com/">flipkart</a></li>
+        <li><a href="https://www.ajio.com/">ajio</a></li>
+     </ul>
+     <div class="menu" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </div> 
+    </nav> 
+    
+    
+    <div class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum in exercitationem nesciunt, fuga sit, obcaecati quia, odio quis nam non provident ut. Delectus, praesentium ratione veniam recusandae itaque saepe vero.</div>
+    <script>
+        let navlinks = document.querySelector(".nav-links");
+        function toggleMenu(){
+            navlinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
